@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">    <link rel="icon" type="image/png" href="logo.png" >  
+    <title>Birthday gift</title>
+</head>
+<body>
+    <div class="container">
+        <div >
+            <h1 class = "header_text">may tanong ako sayo oks lng ba?</h1>
+            <h1 class = "header_text">syempre okay lng pwede mong isagot HAHHAHHAHA</h1>
+        </div>
+        <div class="gif_container">
+            <img src="https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExbXdhOHBsYW1sdG11dzNwOWkyMHQ0em91enRzcmNta2NpNnRnM2tzcCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/ZZFWK4vSSZIO6wLhZa/giphy.gif" alt="Cute animated illustration">
+        </div>
+        <div class = "buttons">
+            <button class="btn" id = "yesButton" onclick="nextPage()">okay lng</button>
+            <button class="btn" id="noButton" onmouseover="moveButton()" onclick="moveButton()">hindi!</button>
+
+
+            <script>
+                function nextPage() {
+                    window.location.href = "seven.html";
+                }
+                
+                function moveButton() {
+                    var x = Math.random() * (window.innerWidth - document.getElementById('noButton').offsetWidth) - 85;
+                    var y = Math.random() * (window.innerHeight - document.getElementById('noButton').offsetHeight) - 48;
+                    document.getElementById('noButton').style.left = `${x}px`;
+                    document.getElementById('noButton').style.top = `${y}px`;
+                }
+            </script> 
+
+            
+        </div>
+    </div>
+</body>
+</html>

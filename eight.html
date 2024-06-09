@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="third.css">     <link rel="icon" type="image/png" href="logo.png" >  
+    <title>Birthday gift</title>
+</head>
+<body>
+    <div class="container">
+        <div >
+            <h1 class = "header_text">de joke lng</h1>
+            <h1 class = "header_text">happy birthday baby koo!</h1>
+        </div>
+        <div class="gif_container">
+            <img src="https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExMzdpNHFvdHR3MjUybG01NXZodDFlbmNxb3dwcXQxNWl4dTkzeGZhbyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/Im6d35ebkCIiGzonjI/giphy.gif" alt="Cute animated illustration">
+        </div>
+        <div class = "buttons">
+            <button class="btn" id = "yesButton" onclick="nextPage()">mwahh</button>
+            <button class="btn" id="noButton" onmouseover="moveButton()" onclick="moveButton()">wahh!</button>
+
+
+            <script>
+                function nextPage() {
+                    window.location.href = "nine.html";
+                }
+                
+                function moveButton() {
+                    var x = Math.random() * (window.innerWidth - document.getElementById('noButton').offsetWidth) - 85;
+                    var y = Math.random() * (window.innerHeight - document.getElementById('noButton').offsetHeight) - 48;
+                    document.getElementById('noButton').style.left = `${x}px`;
+                    document.getElementById('noButton').style.top = `${y}px`;
+                }
+            </script> 
+
+            
+        </div>
+    </div>
+</body>
+</html>
